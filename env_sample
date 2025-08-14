@@ -1,0 +1,23 @@
+# Postgres settings
+POSTGRES_HOST=db
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=yourpassword
+POSTGRES_DBS="A B C D"
+
+# MongoDB settings
+MONGO_HOST=mongo
+MONGO_DB=your_db
+MONGO_USER=
+MONGO_PASSWORD=
+
+# AWS S3 settings
+## Example path anil-demo/project-1/develop
+S3_BACKUP_PATH=s3_path # use path part from s3://path URI
+AWS_REGION=your_region
+AWS_ACCESS_KEY_ID=your_access_key
+AWS_SECRET_ACCESS_KEY=your_secret_key
+
+# Backup options
+BACKUP_TYPE=all           # Options: postgres, mongo, or all
+BACKUP_CRON="0 2 * * *"   # Cron expression for daily backups at 2 AM
+RETENTION_DAYS=5          # Number of days to retain local backups

@@ -68,11 +68,6 @@ services:
       - mongo
     environment:
       - BACKUP_TYPE=all
-    command: >
-      sh -c "
-      echo \"$BACKUP_CRON /scripts/backup.sh >> /var/log/backup.log 2>&1\" | crontab - &&
-      crond -f -l 2
-      "
     restart: unless-stopped
 ```
 

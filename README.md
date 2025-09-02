@@ -40,7 +40,7 @@ MONGO_USER=
 MONGO_PASSWORD=
 
 # AWS S3 settings
-S3_BACKUP_PATH=s3_path #use path part from s3://path URI
+S3_BACKUP_PATH=s3_path #use s3 path e.g: anil-bucket/backups/project-name/develop
 AWS_REGION=your_region
 AWS_ACCESS_KEY_ID=your_access_key
 AWS_SECRET_ACCESS_KEY=your_secret_key
